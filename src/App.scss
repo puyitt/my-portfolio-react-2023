@@ -32,6 +32,10 @@ img {
     max-width: 100%;
 }
 
+figure {
+    margin: 0;
+}
+
 .App {
     position: relative;
     max-width: 1200px;
@@ -430,6 +434,7 @@ img {
         }
     }
 }
+
 @media screen and (max-width: 980px) {
     .App {
         max-width: 100%;

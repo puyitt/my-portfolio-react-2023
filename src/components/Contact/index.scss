@@ -1,7 +1,18 @@
 .contact-page {
+    margin-bottom: 50px!important;
+
+    .block {
+        margin-top: -60px;
+    }
+
     .text-zone {
+        width: calc(100% - 540px);
         margin-left: 0;
         margin-right: 100px;
+
+        p {
+            margin-top: 0;
+        }
 
         .info-map {
             margin: 30px auto 0;
@@ -44,7 +55,6 @@
     
     .info-wrap {
         width: 440px;
-        
     }
 }
 
@@ -74,14 +84,18 @@
 }
 @media screen and (max-width: 980px) {
     .contact-page {
+        .block {
+            margin-top: 40px!important;
+        }
+
         .text-zone {
             margin: 0;
+            width: 100%;
 
             .info-map {
-                padding: 20px;
                 width: 100%;
-                max-width: 360px;
-                margin: 50px auto 0;
+                max-width: fit-content;
+                margin: 0px auto 0;
                 box-sizing: border-box;
 
                 li {

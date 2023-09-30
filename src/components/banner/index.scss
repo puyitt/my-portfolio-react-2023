@@ -1,6 +1,8 @@
 .home-page {
     .text-zone {
-        width: calc(100% - 400px);
+        width: calc(100% - 300px);
+        padding-left: 100px;
+        box-sizing: border-box;
     }
 
     h1 {
@@ -65,11 +67,13 @@
         }
     }
 }
+
 @media screen and (max-width: 1200px) {
     .home-page {
         .text-zone {
             width: 100%;
             margin: 60px auto 0;
+            padding-left: 0;
         }
     
         h1 {
