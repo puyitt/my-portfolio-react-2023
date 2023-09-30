@@ -3,81 +3,8 @@
         margin-left: 0;
         margin-right: 100px;
 
-        .contact-form {
-            width: 100%;
-            margin-top: 20px;
-            
-            ul {
-                padding: 0;
-                margin: 0;
-        
-                li {
-                    padding: 0;
-                    margin: 0;
-                    list-style: none;
-                    margin-bottom: 10px;
-                    opacity: 0;
-                    overflow: hidden;
-                    display: block;
-                    clear: both;
-                    position: relative;
-                    animation: fadeInUp 2s 2s;
-                    animation-fill-mode: forwards;
-                }
-        
-                li.half {
-                    width: 49%;
-                    margin-left: 2%;
-                    float: left;
-                    clear: none;
-        
-                    &:first-child {
-                        margin-left: 0;
-                    }
-                }
-            }
-        
-            input[type='text'],
-            input[type='email'] {
-                width: 100%;
-                border: 0;
-                background: #115173;
-                height: 50px;
-                font-size: 16px;
-                color: #fff;
-                padding: 0 20px;
-                box-sizing: border-box;
-                font-family: sans-serif;
-                outline: 0;
-            }
-        
-            textarea {
-                width: 100%;
-                border: 0;
-                background: #115173;
-                height: 50px;
-                font-size: 16px;
-                color: #fff;
-                padding: 20px;
-                box-sizing: border-box;
-                min-height: 150px;
-                font-family: sans-serif;
-                resize: none;
-                outline: 0;
-            }
-        
-            .flat-button {
-                padding: 10px 18px;
-                float: right;
-            }
-        }
-    }
-    
-    .info-wrap {
-        width: 440px;
-
         .info-map {
-            margin-top: 0px;
+            margin: 30px auto 0;
             padding: 25px 20px 25px 45px;
             color: #fff;
             font-family: 'Helvetica';
@@ -87,7 +14,8 @@
             animation: fadeIn 1s 1.5s;
             animation-fill-mode: forwards;
             border: 2px solid #ffd700;
-
+            width: 480px;
+            
             li {
                 display: flex;
                 font-size: 16px;
@@ -98,13 +26,14 @@
                 }
                 
                 .icon {
-                    width: 50px;
+                    width: 30px;
                 }
 
                 .data {
                     margin-left: 20px;
                     line-height: 1.8;
-
+                    width: calc(100% - 50px)
+                    ;
                     .tel {
                         text-decoration: none;
                         color: #fff;
@@ -112,32 +41,16 @@
                 }
             }
         }
-
+    }
+    
+    .info-wrap {
+        width: 440px;
         
     }
 }
 
 .light {
     .text-zone {
-        .contact-form {
-            input[type='text'],
-            input[type='email'] {
-                background: #fff;
-                color: #022c43;
-                border: 1px solid #022c43;
-                border-radius: 5px;
-            }
-        
-            textarea {
-                background: #fff;
-                color: #022c43;
-                border: 1px solid #022c43;
-                border-radius: 5px;
-            }
-        }
-    }
-
-    .info-wrap {
         .info-map {
             color: #022c43;
             border: 2px solid #022c43;
@@ -164,23 +77,25 @@
     .contact-page {
         .text-zone {
             margin: 0;
-        }
-        
-        .info-wrap {
-            max-width: 360px;
-            margin: 50px auto 0;
-    
+
             .info-map {
                 padding: 20px;
-                
+                width: 100%;
+                max-width: 360px;
+                margin: 50px auto 0;
+                box-sizing: border-box;
+
                 li {
                     .data {
+                        font-size: 12px;
                         margin-left: 10px;
                     }
                 }
             }
-    
-            
+        }
+
+        .info-wrap {
+            display: none;
         }
     }
 }
