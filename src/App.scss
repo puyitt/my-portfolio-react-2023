@@ -434,7 +434,11 @@ figure {
         }
     }
 }
-
+@media (min-width: 980px) and (max-width: 1300px){
+    .tags {
+        left: 0!important;
+    }
+}
 @media screen and (max-width: 980px) {
     .App {
         max-width: 100%;
