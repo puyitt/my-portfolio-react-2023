@@ -1,0 +1,121 @@
+.projectList {
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid #ffd700;
+        padding: 30px 40px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        align-items: center;
+        margin-bottom: 40px;
+        pointer-events: none;
+        transition: box-shadow 0.5s;
+
+        &:hover {
+            box-shadow: 0 0 15px 0 #ffd700;
+        }
+
+        .Img {
+            width: 400px;
+            margin: 0;
+        }
+
+        .label {
+            width: calc(100% - 440px);
+            margin-left: 40px;
+
+            .title {
+                font-size: 22px;
+                font-weight: bold;
+                color: #ffd700;
+            }
+
+            .description {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+
+            .tech {
+                span {
+                    color: #ffd700;
+                }
+            } 
+            
+           .visit {
+                color:#fff;
+                font-size: 18px;
+                width: 34px;
+                margin-left: auto;
+                display: block;
+                transition: color 0.5s;
+                pointer-events: auto;
+
+                &:hover {
+                    color: #ffd700;
+                }
+           }
+        }
+    }
+}
+
+.light {
+    .projectList {
+        li {
+            border-color: #022c43;
+
+            &:hover {
+                box-shadow: 0 0 15px 0 #022c43;
+            }
+
+            .label {
+                .visit {
+                    color :#022c43;
+
+                    &:hover {
+                        color: #ffd700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .projectList {
+        li {
+            width: 100%;
+            flex-flow: wrap;
+            padding: 20px;
+
+            .Img {
+                width: 100%;
+                margin: 0;
+                border-radius: 10px;
+            }
+    
+            .label {
+                width: 100% ;
+                margin-left: 0px;
+    
+                .title {
+                    font-size: 20px;
+                }
+    
+                .description {
+                    font-size: 13px;
+                }
+    
+
+               .visit {
+                    font-size: 15px;
+                    width: 30px;
+               }
+            }
+        }
+    }
+
+}
