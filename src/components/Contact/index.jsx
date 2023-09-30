@@ -33,7 +33,6 @@ const Contact = () => {
               questions, don't hesitate to contact me using below form either.
             </p>
             <ul className="info-map">
-              <li><span className='icon'><FontAwesomeIcon icon={faMapLocation} color="#ffd700"/></span><span className='data'>No-100, Upper Mandalay Street, Kandawlay Quarter,<br />Mingalar Taung Nyunt Township, Yangon. <br /></span></li>
               <li><span className='icon'><FontAwesomeIcon icon={faPhone} color="#ffd700"/></span><span className='data'><a className="tel" href="tel:=959960927470">+959-960927470</a><br/></span></li>
               <li><span className='icon'><FontAwesomeIcon icon={faEnvelope} color="#ffd700"/></span><span className='data'><a href="mailTo:thetpaingsoe.bece@gmail.com">thetpaingsoe.bece@gmail.com</a></span></li>
             </ul>

@@ -89,18 +89,10 @@ const About = () => {
                         </div>
                     </div>
                     <div className="text-zone">
-                        <p>Experienced Frontend Developer with 4+ years of experience and a degree in ComputerEngineering from University of Technology( Yatanarbon Cyber City ).</p>
+                        <p>Experienced Frontend Developer with 4+ years of experience and a degree in Computer Engineering from University of Technology( Yatanarbon Cyber City ).</p>
                         <p> 
                             A self-motivated individual with knowledge and proficiency in Angular, HTML5, CSS,Bootstrap, JavaScript, React, Jquery and responsive web development, 
-                            as well as the ability tocommunicate effectively in a team setting, seeks the position of Frontend Developer.</p>
-                        <p>
-                            I'm a very ambitious front-end developer looking for a role in an
-                            IT company with the opportunity to work with the latest
-                            technologies on challenging and diverse projects.
-                        </p>
-                        <p align="LEFT">
-                            I'm quiet confident, naturally curious, and perpetually working on
-                            improving my chops one design problem at a time.
+                            as well as the ability tocommunicate effectively in a team setting.
                         </p>
                         <p>
                             If I were to define myself in one sentence, it would be: I'm great at socializing and having fun, I'm a sports fanatic, and I'm tech-obsessed!
