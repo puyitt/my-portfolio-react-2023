@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEnvelope,faMapLocation,faPhone } from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import contactme from '../../assets/images/digital-contract.svg'
 
 const Contact = () => {

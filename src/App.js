@@ -2,7 +2,7 @@ import './App.scss';
 import Banner from './components/banner';
 import About from './components/About';
 import Contact from './components/Contact';
-import {useState} from 'react';
+import React, {useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAddressBook, faBriefcaseClock, faHome, faList, faMoon, faSun, faUser } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -25,6 +25,10 @@ function App() {
     setIsLight(current => !current);
       document.body.classList.toggle('light');
   };
+
+  useEffect(() => {
+    
+  }, []);
 
   return (
     <div className='App'>

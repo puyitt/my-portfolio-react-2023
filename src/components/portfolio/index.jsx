@@ -6,6 +6,7 @@ import img2 from '../../assets/images/project_2.png';
 import img3 from '../../assets/images/project_3.png';
 import img4 from '../../assets/images/project_4.png';
 import img5 from '../../assets/images/project_5.png';
+import img6 from '../../assets/images/project_6.png';
 import './index.scss'
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -49,6 +50,14 @@ const Portfolio = () => {
             description: "Insect University Purchasing Department. We sell goods with motifs of insects, creatures, and nature.",
             language:'Html, Css, JavaScript, Jquery',
             link:'https://mamekoshokai.online/'
+        },
+        {
+            id: '6',
+            img:img6,
+            title:'LinkALink',
+            description: "This site introduces Linkalink's production results. Design, web production, system development, application development, consulting",
+            language:'Html, Css, JavaScript, Jquery',
+            link:'https://linkalink.jp/'
         },
     ]
     useEffect(() => {

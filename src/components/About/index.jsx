@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
+import { useRef,useEffect, useState } from 'react'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import {
@@ -15,18 +15,34 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import jquery from '../../assets/images/jquery.svg'
 import tailwind from '../../assets/images/tailwind.svg'
+// import { Controller, Scene } from 'react-scrollmagic-r18';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
     useEffect(() => {
-        setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 3000)
+        // const handleScroll = () => {
+        //     const targetScrollPosition = 200;
+        //     if (window.scrollY >= targetScrollPosition) {
+        //       setLetterClass('text-animate');
+
+        //       setTimeout(() => {
+        //         setLetterClass('text-animate-hover')
+        //     }, 3000)
+        //     } else {
+        //         setLetterClass('');
+        //     }
+        //   };
+      
+        //   window.addEventListener('scroll', handleScroll);
+        //   return () => {
+        //     window.removeEventListener('scroll', handleScroll);
+        //   };
+
     }, [])
 
     return (
-        <>
+        <>  
             <div className="container about-page" id="about">
                 <h1>
                     <AnimatedLetters
@@ -35,6 +51,7 @@ const About = () => {
                         idx={15}
                     />
                 </h1>
+
                 <div className="block">
                     <div className="skillSet">
                         <a href="https://html.com/" target="_blank" className='octagonWrap wrap1'>

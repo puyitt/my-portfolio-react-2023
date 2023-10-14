@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.scss'
-import { faFacebook, faGithub, faGithubAlt, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
