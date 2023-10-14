@@ -7,6 +7,8 @@ import img3 from '../../assets/images/project_3.png';
 import img4 from '../../assets/images/project_4.png';
 import img5 from '../../assets/images/project_5.png';
 import img6 from '../../assets/images/project_6.png';
+import img7 from '../../assets/images/artscience.png';
+import img8 from '../../assets/images/wefie.png';
 import './index.scss'
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -15,7 +17,7 @@ const Portfolio = () => {
             id: '1',
             img:img1,
             title:'Kuwasawa Design School/Sougou',
-            description: "Learn design at Kuwasawa's daytime club | At the Kuwasawa Design Institute Comprehensive Design Department (daytime club), the first year is a thorough study of the basics while honing the sensibilities essential to design, and the second and third years are focused on majoring in design. Students will be divided into groups to increase their expertise and application skills in each field.",
+            description: "Profile website for Kuwasawa Design School/Sougou.",
             language:'Html, Css, JavaScript, Jquery',
             link:'https://www.kds.ac.jp/sougou/'
         },
@@ -23,7 +25,7 @@ const Portfolio = () => {
             id: '2',
             img:img2,
             title:'Kuwasawa Design School/Yakan',
-            description: "At Kuwasawa Design Institute's Major Design Department (evening class), people from diverse backgrounds study fashion/product/space/fashion design. We will answer any concerns or questions you may have about enrolling, such as ``I have never studied design before'' or ``I want to study while working'', along with the voices of alumni and current students.",
+            description: "Profile website for Kuwasawa Design School/Yakan.",
             language:'Html, Css, JavaScript, Jquery',
             link:'https://www.kds.ac.jp/yakan/'
         },
@@ -31,7 +33,7 @@ const Portfolio = () => {
             id: '3',
             img:img3,
             title:'Apex Factory',
-            description: "Apex Factory Co., Ltd.",
+            description: "Profile webiste for Apex Factory Co., Ltd.",
             language:'Html, Css, JavaScript, Jquery',
             link:'https://apexfactory.co.jp/'
         },
@@ -39,7 +41,7 @@ const Portfolio = () => {
             id: '4',
             img:img4,
             title:'Hirakata',
-            description: "It's like a family that connects by heart just by liking Hirakata City. Hirakata City is a core city located in the northeastern part of Osaka Prefecture with a population of approximately 400,000 people. This is a promotion site for Hirakata City, which is known for its easy access as the Keihan Railway and JR lines run through the city.",
+            description: "Profile Website for Hirakata City.",
             language:'Html, Css, JavaScript, Jquery',
             link:'https://mamekoshokai.online/'
         },
@@ -47,7 +49,7 @@ const Portfolio = () => {
             id: '5',
             img:img5,
             title:'Mameko',
-            description: "Insect University Purchasing Department. We sell goods with motifs of insects, creatures, and nature.",
+            description: "Profile website for Mameko.",
             language:'Html, Css, JavaScript, Jquery',
             link:'https://mamekoshokai.online/'
         },
@@ -55,9 +57,25 @@ const Portfolio = () => {
             id: '6',
             img:img6,
             title:'LinkALink',
-            description: "This site introduces Linkalink's production results. Design, web production, system development, application development, consulting",
+            description: "Profile website for LinkALink.",
             language:'Html, Css, JavaScript, Jquery',
             link:'https://linkalink.jp/'
+        },
+        {
+            id: '7',
+            img:img7,
+            title:'An art science lead campaign',
+            description: "An art science lead campaign that capture message in a capsule.(1080 x 1920)",
+            language:'Html, Css, JavaScript, Jquery',
+            link:'https://artscience.wunderfauks.com/'
+        },
+        {
+            id: '8',
+            img:img8,
+            title:'Wefie (McDonald)',
+            description: "Group selfie interactive campaign during 11.11 National Sharing Day McDonald.",
+            language:'Html, Css, JavaScript, Jquery',
+            link:'https://wefie.wunderfauks.com/'
         },
     ]
     useEffect(() => {
