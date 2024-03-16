@@ -29,7 +29,7 @@ const Experience = () => {
             <div className="jobCard job1">
                 <p className="title">Frontend Developer</p>
                 <p className="date">0ct-2020 to current</p>
-                <p className="company">EBP Connteics Co.,Ltd</p>
+                <p className="company">EBP Connetis Co.,Ltd</p>
             </div>
             <ul className="detail detail1">
                 <li>Implemented responsive designs with Html, css, javascript, Jquery and adobe Xd.</li>
