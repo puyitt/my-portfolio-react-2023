@@ -26,9 +26,21 @@ const Experience = () => {
             <span className="point1"></span>
             <span className="point2"></span>
             <span className="point3"></span>
+            <span className="point4"></span>
+            <div className="jobCard job4">
+                <p className="title">Officer - Senior Frontend Developer</p>
+                <p className="date">Dec-2023 to Present</p>
+                <p className="company">Yoma Bank (Myanmar)</p>
+            </div>
+            <ul className="detail detail4">
+                <li>Developed Banking Web Portal with Angular, Html, css, javascript, bootstrap, materials UI and Sketch.</li>
+                <li>API integrations with Angular</li>
+                <li>Worked in banking Sector</li>
+            </ul>
+
             <div className="jobCard job1">
-                <p className="title">Frontend Developer</p>
-                <p className="date">0ct-2020 to current</p>
+                <p className="title">Senior Frontend Developer</p>
+                <p className="date">Oct-2020 to Nov-2023</p>
                 <p className="company">EBP Connetis Co.,Ltd</p>
             </div>
             <ul className="detail detail1">
@@ -56,7 +68,6 @@ const Experience = () => {
             <ul className="detail detail3">
                 <li>Developed and maintained websites with Wordpress</li>
             </ul>
-               
         </div>
       </div>
     </>

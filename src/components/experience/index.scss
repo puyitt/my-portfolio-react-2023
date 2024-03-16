@@ -1,7 +1,7 @@
 .experience-page {
     .expTree {
         width: 15px;
-        height: 800px;
+        height: 1050px;
         background: #ffd700;
         margin: 100px auto;
         border-radius: 5px;
@@ -9,7 +9,8 @@
 
         .point1,
         .point2,
-        .point3 {
+        .point3,
+        .point4 {
             position: absolute;
             width: 13px;
             height: 13px;
@@ -29,6 +30,10 @@
 
         .point3 {
             top: 675px;
+        }
+
+        .point4 {
+            top: 975px;
         }
 
         .jobCard {
@@ -52,6 +57,7 @@
             }
 
             &.job1 {
+                top: 286px;
                 right: 50px;
 
                 &::before {
@@ -69,7 +75,7 @@
             }
 
             &.job2 {
-                top: 290px;
+                top: 590px;
                 left: 50px;
 
                 &::after {
@@ -82,7 +88,7 @@
             }
 
             &.job3 {
-                top: 585px;
+                top: 885px;
                 right: 50px;
 
                 &::before {
@@ -95,6 +101,19 @@
                 }
 
                 &:hover ~ .detail3{
+                    opacity: 1;
+                }
+            }
+
+            &.job4 {
+                top: -15px;
+                left: 50px;
+
+                &::after {
+                    display: none;
+                }
+
+                &:hover ~ .detail4{
                     opacity: 1;
                 }
             }
@@ -141,18 +160,23 @@
             color: #fff;
 
             &.detail1 {
-                top: -15px;
+                top: 315px;
                 left: 50px;
             }
 
             &.detail2 {
-                top: 290px;
+                top: 590px;
                 right: 50px;
             }
 
             &.detail3 {
-                top: 590px;
+                top: 890px;
                 left: 50px;
+            }
+
+            &.detail4 {
+                top: 0px;
+                right: 50px;
             }
         }
     }
