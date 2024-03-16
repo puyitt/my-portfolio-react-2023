@@ -56,6 +56,7 @@ const Experience = () => {
             <ul className="detail detail3">
                 <li>Developed and maintained websites with Wordpress</li>
             </ul>
+               
         </div>
       </div>
     </>
