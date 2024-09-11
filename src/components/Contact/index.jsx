@@ -4,21 +4,30 @@ import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
 import contactme from '../../assets/images/digital-contract.svg'
+import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('')
+  const { ref, inView } = useInView({
+      triggerOnce: true,
+      threshold: 0, // Change this value based on when you want the animation to start
+  });
 
   useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    if (inView) {
+        setLetterClass('text-animate');
+
+        setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 3000)
+      }
+    }, [inView])
 
 
   return (
     <>
-      <div className="container contact-page" id="contact">
-        <h1>
+      <div className="container contact-page scroll-container" id="contact">
+        <h1 ref={ref}>
           <AnimatedLetters
             letterClass={letterClass}
             strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}

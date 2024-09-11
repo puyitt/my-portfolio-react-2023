@@ -1,21 +1,31 @@
 import React from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer';
 import './index.scss'
 
 const Experience = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
-    
+    const [letterClass, setLetterClass] = useState('')
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0, // Change this value based on when you want the animation to start
+    });
+
     useEffect(() => {
-        setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 3000)
-    }, [])
+        if (inView) {
+            setLetterClass('text-animate');
+
+            setTimeout(() => {
+                setLetterClass('text-animate-hover')
+            }, 3000)
+        }
+       
+    }, [inView])
 
   return (
     <>
-      <div className="container experience-page" id="careerlife">
-        <h1>
+      <div className="container experience-page scroll-container" id="careerlife">
+        <h1 ref={ref}>
           <AnimatedLetters
               letterClass={letterClass}
               strArray={['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n','c','e']}

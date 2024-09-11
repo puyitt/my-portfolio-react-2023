@@ -1,6 +1,7 @@
 import React from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer';
 import img1 from '../../assets/images/project_1.png';
 import img2 from '../../assets/images/project_2.png';
 import img3 from '../../assets/images/project_3.png';
@@ -11,7 +12,12 @@ import img7 from '../../assets/images/artscience.png';
 import img8 from '../../assets/images/wefie.png';
 import './index.scss'
 const Portfolio = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass, setLetterClass] = useState('');
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0, // Change this value based on when you want the animation to start
+    });
+
     let projectList = [
         {
             id: '1',
@@ -79,15 +85,19 @@ const Portfolio = () => {
         },
     ]
     useEffect(() => {
-        setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 3000)
-    }, [])
+        if (inView) {
+            setLetterClass('text-animate');
+
+            setTimeout(() => {
+                setLetterClass('text-animate-hover')
+            }, 3000)
+        }
+    }, [inView])
 
   return (
     <>
-      <div className="container portfolio-page" id="portfolio">
-        <h1>
+      <div className="container portfolio-page scroll-container" id="portfolio">
+        <h1 ref={ref}>
           <AnimatedLetters
               letterClass={letterClass}
               strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i','o']}
