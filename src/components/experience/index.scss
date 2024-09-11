@@ -282,28 +282,32 @@
 
         .expMobile {
             display: block;
-            
+
             .jobCard {
                 .title {
                     font-size: 18px;
                     font-weight: bold;
                     color: #ffd700;
+                    margin-bottom: 5px;
                 }
     
                 .date {
                     font-size: 14px;
-                    color: rgb(204, 204, 204)
+                    color: rgb(204, 204, 204);
+                    margin: 5px 0;
                 }
     
                 .company {
                     font-size: 14px;
                     color: #ffd700;
+                    margin-top: 5px;
                 }
             }
 
             .detail {
                 color: #fff;
                 font-size: 12px;
+                margin-bottom: 30px;
             }
         }
     }
