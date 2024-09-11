@@ -180,6 +180,10 @@
             }
         }
     }
+
+    .expMobile {
+        display: none;
+    }
 }
 
 .light {
@@ -215,144 +219,181 @@
 @media screen and (max-width: 980px) {
     .experience-page {
         .expTree {
-            width: 15px;
-            height: 800px;
-            margin-top: 50px;
+            // width: 15px;
+            // height: 800px;
+            // margin-top: 50px;
 
-            .point1 {
-                top: 63px;
-            }
+            // .point1 {
+            //     top: 63px;
+            // }
     
-            .point2 {
-                top: 364px;
-            }
+            // .point2 {
+            //     top: 364px;
+            // }
     
-            .point3 {
-                top: 662px;
-            }
+            // .point3 {
+            //     top: 662px;
+            // }
 
-            .jobCard {
-                width: 150px;
-                padding: 10px;
+            // .jobCard {
+            //     width: 150px;
+            //     padding: 10px;
                 
+            //     .title {
+            //         font-size: 18px;
+            //         font-weight: bold;
+            //         color: #ffd700;
+            //         margin: 0 0 5px 0;
+            //     }
+
+            //     .date {
+            //         font-size: 13px;
+            //         margin: 0 0 5px 0;
+            //     }
+
+            //     .company {
+            //         font-size: 13px;
+            //         margin: 0;
+            //     }
+            // }
+
+            // .detail {
+            //     min-width: 150px;
+            //     font-size: 13px;
+            //     opacity: 1;
+
+            //     &.detail1 {
+            //         top: -15px;
+            //         left: 10px;
+            //     }
+
+            //     &.detail2 {
+            //         top: 230px;
+            //         right: 30px;
+            //     }
+
+            //     &.detail3 {
+            //         top: 590px;
+            //         left: 10px;
+            //     }
+            // }
+            display: none;
+        }
+
+        .expMobile {
+            display: block;
+            
+            .jobCard {
                 .title {
                     font-size: 18px;
                     font-weight: bold;
                     color: #ffd700;
-                    margin: 0 0 5px 0;
                 }
-
+    
                 .date {
-                    font-size: 13px;
-                    margin: 0 0 5px 0;
+                    font-size: 14px;
+                    color: rgb(204, 204, 204)
                 }
-
+    
                 .company {
-                    font-size: 13px;
-                    margin: 0;
-                }
-            }
-
-            .detail {
-                min-width: 150px;
-                font-size: 13px;
-                opacity: 1;
-
-                &.detail1 {
-                    top: -15px;
-                    left: 10px;
-                }
-
-                &.detail2 {
-                    top: 230px;
-                    right: 30px;
-                }
-
-                &.detail3 {
-                    top: 590px;
-                    left: 10px;
-                }
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 430px) {
-    .experience-page {
-        .expTree {
-            .point1 {
-                top: 60px;
-            }
-    
-            .point2 {
-                top: 358px;
-            }
-    
-            .point3 {
-                top: 656px;
-            }
-
-            .jobCard {
-                padding: 10px;
-                width: 140px;
-
-                &::before,
-                &::after {
-                    content: '';
-                    width: 35px;
-                    height: 2px;
-                    background-color: #ffd700;
-                    position: absolute;
-                    
-                }
-
-                &.job1 {
-                    right: 40px;
-    
-                    &::after {
-                        right: -35px;
-                        top: 50%
-                    }
-                }
-    
-                &.job2 {
-                    top: 290px;
-                    left: 40px;
-    
-                    &::before {
-                        left: -35px;
-                    }
-                }
-    
-                &.job3 {
-                    right: 40px;
-    
-                    &::after {
-                        right: -35px;
-                    }
-                }
-
-                .title {
-                    font-size: 16px;
-                    font-weight: bold;
+                    font-size: 14px;
                     color: #ffd700;
-                    margin: 0 0 5px 0;
-                }
-
-                .date {
-                    font-size: 12px;
-                }
-
-                .company {
-                    font-size: 12px;
                 }
             }
 
             .detail {
-                min-width: 140px;
+                color: #fff;
                 font-size: 12px;
             }
         }
     }
+
+    .light {
+        .expMobile {
+            .detail {
+                color: #022c43;
+            }
+        }
+    }
 }
+
+
+// @media screen and (max-width: 430px) {
+//     .experience-page {
+//         .expTree {
+//             display: none;
+//             .point1 {
+//                 top: 60px;
+//             }
+    
+//             .point2 {
+//                 top: 358px;
+//             }
+    
+//             .point3 {
+//                 top: 656px;
+//             }
+
+//             .jobCard {
+//                 padding: 10px;
+//                 width: 140px;
+
+//                 &::before,
+//                 &::after {
+//                     content: '';
+//                     width: 35px;
+//                     height: 2px;
+//                     background-color: #ffd700;
+//                     position: absolute;
+                    
+//                 }
+
+//                 &.job1 {
+//                     right: 40px;
+    
+//                     &::after {
+//                         right: -35px;
+//                         top: 50%
+//                     }
+//                 }
+    
+//                 &.job2 {
+//                     top: 290px;
+//                     left: 40px;
+    
+//                     &::before {
+//                         left: -35px;
+//                     }
+//                 }
+    
+//                 &.job3 {
+//                     right: 40px;
+    
+//                     &::after {
+//                         right: -35px;
+//                     }
+//                 }
+
+//                 .title {
+//                     font-size: 16px;
+//                     font-weight: bold;
+//                     color: #ffd700;
+//                     margin: 0 0 5px 0;
+//                 }
+
+//                 .date {
+//                     font-size: 12px;
+//                 }
+
+//                 .company {
+//                     font-size: 12px;
+//                 }
+//             }
+
+//             .detail {
+//                 min-width: 140px;
+//                 font-size: 12px;
+//             }
+//         }
+//     }
+// }
