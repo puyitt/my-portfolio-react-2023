@@ -3,7 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons';
-import contactme from '../../assets/images/digital-contract.svg'
+import contactme from '../../assets/images/contact-me.png'
 import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
