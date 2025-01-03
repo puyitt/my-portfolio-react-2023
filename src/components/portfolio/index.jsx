@@ -49,7 +49,7 @@ const Portfolio = () => {
             title:'Hirakata',
             description: "Profile Website for Hirakata City.",
             language:'Html, Css, JavaScript, Jquery',
-            link:'https://mamekoshokai.online/'
+            link:'https://www.city.hirakata.osaka.jp/promotion/index.html'
         },
         {
             id: '5',
